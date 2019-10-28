@@ -1,0 +1,30 @@
+<h2>Products</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody  *ngFor ="let product of products">
+    <tr>
+      <td> <a [routerLink] = "['/products',product.id]">
+        {{product.name}}
+        </a>
+        </td>
+      <td>{{product.price}}</td>
+      <td>{{product.description}}</td>
+    </tr>
+ 
+</table>
+
+
+  
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
